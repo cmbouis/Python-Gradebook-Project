@@ -1,0 +1,28 @@
+# Last Semester Gradebook
+last_semester_gradebook = [('politics', 80), ('latin', 96), ('dance', 97), ('architecture', 65)]
+
+# Current Classes
+subjects = ['physics', 'calculus', 'poetry', 'history']
+
+# Current Grades
+grades = [98, 97, 85, 88]
+
+# Class and Grade Additions
+subjects.append('computer science')
+grades.append(100)
+
+# Gradebook List Creation
+gradebook = list(zip(subjects, grades))
+
+# Gradebook List Addition
+gradebook.append(('visual arts', 93))
+
+# Full Gradebook Creation
+full_gradebook = gradebook + last_semester_gradebook
+
+# Full Gradebook Test
+print(list(full_gradebook))
+
+
+# Displays:
+#[('physics', 98), ('calculus', 97), ('poetry', 85), ('history', 88), ('computer science', 100), ('visual arts', 93), ('politics', 80), ('latin', 96), ('dance', 97), ('architecture', 65)]
